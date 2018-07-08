@@ -18,8 +18,6 @@ import json
 def on_login():
     if request.is_json:
         code = request.get_json(cache=False).get("code")
-        print "xxxx" + global_vars.XIAOCHENGXU_APPID
-        print "yyyy" + global_vars.XIAOCHENGXU_SECERET
         try:
             r = requests.get("https://api.weixin.qq.com/sns/jscode2session",
                              {"appid": global_vars.XIAOCHENGXU_APPID,

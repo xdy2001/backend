@@ -14,7 +14,7 @@ CHAR_SPLIT_REGEX = re.compile(u'。|！|；|：|？')
 COOKIE_FILENAME_MAP = {}
 
 
-XIAOCHENGXU_APPID= os.getenv("XIAOCHENGXU_APIID", "no_appid").strip()
+XIAOCHENGXU_APPID= os.getenv("XIAOCHENGXU_APPID", "no_appid").strip()
 XIAOCHENGXU_SECERET= os.getenv("XIAOCHENGXU_SECERET", "no_secret").strip()
 
 
